@@ -1,12 +1,35 @@
-@font-face {
-	font-family: OpenSans;
-	src        : url('../fonts/OpenSans-Regular.ttf');
+$myfont         : Georgia 1.2em;
+$table_head_col : #ccc;
+$table_row_col  :$table_head_col;
+$table_bor_col  : #eee;
+$container_width: 700px;
+$first_col_width: 150px;
+
+div.container {
+
+	margin: auto;
+	font  : $myfont;
+	width : $container_width;
 }
 
-body {
-	min-height         : 100vh;
-	background         : #ccc;
-	background-image   : url('../images/test.jpg');
-	background-position: center;
-	background-repeat  : no-repeat;
+table {
+
+	tr:nth-child(odd) {
+		background: $table_row_col
+	}
+
+	td:first-child {
+		width: $first_col_width
+	}
+
+	th {
+		background-color: $table_head_col;
+	}
+
+	border: 3px solid $table_bor_col;
+}
+
+h1 {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(30deg, rgba(255, 255, 255, 1) 0%, $table_head_col 100%);
 }
