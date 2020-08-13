@@ -1,5 +1,6 @@
 {
 	"scripts": {
+		"dev": "webpack -wd --config webpack.config.js && cp index.html dist/index.html",
 		"build": "webpack --config webpack.config.js && cp index.html dist/index.html"
 	},
 	"devDependencies": {
