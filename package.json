@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "cp src/html/* dist && webpack -wd --config webpack.config.js",
-		"build": "webpack --config webpack.config.js && cp src/html/*",
+		"build": "webpack --config webpack.config.js && cp src/html/* dist",
 		"build_original": "cp src/html/* dist && webpack --config webpack.config.js"
 	},
 	"devDependencies": {
