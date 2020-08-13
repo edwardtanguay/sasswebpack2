@@ -1,7 +1,8 @@
 {
 	"scripts": {
 		"dev": "cp src/html/* dist && webpack -wd --config webpack.config.js",
-		"build": "cp src/html/* dist && webpack --config webpack.config.js"
+		"build": "webpack --config webpack.config.js && cp src/html/*",
+		"build_original": "cp src/html/* dist && webpack --config webpack.config.js"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.3.4",
