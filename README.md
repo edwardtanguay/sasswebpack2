@@ -1,4 +1,4 @@
-# Webpack boilerplate
+# sasswebpack2 (Webpack boilerplate)
 
 Install and run
 ```
