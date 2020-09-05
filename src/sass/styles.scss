@@ -1,14 +1,32 @@
 $myfont         : Georgia 1.2em;
-$table_head_col : blue;
+$table_head_col : #ccc;
 $table_row_col  :$table_head_col;
 $table_bor_col  : #eee;
 $container_width: 700px;
 $first_col_width: 150px;
 
+$mainFontColor: navy;
+$fontSizeRegular: 1.3em;
+$fontSizeSmall: $fontSizeRegular * .6;
+
 div.container {
 
 	font : $myfont;
 	width: $container_width;
+
+	.sassTest {
+
+		p {
+			color: $mainFontColor;
+			font-size: $fontSizeRegular;
+		}
+		div.footer {
+			font-size: $fontSizeSmall;
+			color: #666; 
+			border-top: 1px solid #ccc;
+			padding-top: 3px;
+		}
+	}
 }
 
 table {
