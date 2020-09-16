@@ -1,4 +1,5 @@
 @import "variables";
+@import "tables";
 
 div.container {
 	font: $myfont;
@@ -16,22 +17,6 @@ div.container {
 			padding-top: 3px;
 		}
 	}
-}
-
-table {
-	tr:nth-child(odd) {
-		background: $table_row_col;
-	}
-
-	td:first-child {
-		width: $first_col_width;
-	}
-
-	th {
-		background-color: $table_head_col;
-	}
-
-	border: 3px solid $table_bor_col;
 }
 
 h1 {
