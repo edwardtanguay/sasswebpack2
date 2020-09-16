@@ -1,4 +1,4 @@
-# sasswebpack2 (Webpack boilerplate)
+# sasswebpack2 (mini-framework)
 
 Install and run development environment
 - `npm install`
